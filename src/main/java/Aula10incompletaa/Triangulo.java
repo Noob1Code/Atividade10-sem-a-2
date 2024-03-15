@@ -15,52 +15,52 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package exaula10.kayquedefreitas;
+package Aula10incompletaa;
 
 /**
  *
  * @author Kayque de Freitas <kayquefreitas08@gmail.com>
  * @data 15/03/2024
- * @brief Class Retangulo
+ * @brief Class Triangulo
  */
-public class Retangulo extends Figura {
+public class Triangulo extends Figura {
 
-    private double lado1;
-    private double lado2;
+    private double base;
+    private double altura;
+
+    public Triangulo() {
+    }
+
+    public Triangulo(String cor, double base, double altura) {
+        super(cor);
+        this.base = base;
+        this.altura = altura;
+    }
+
+    public double getBase() {
+        return base;
+    }
+
+    public void setbase(double base) {
+        this.base = base;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setaltura(double altura) {
+        this.altura = altura;
+    }
 
     @Override
     public double area() {
-        return this.lado1 * this.lado2;
-    }
-
-    public Retangulo(String cor, double lado1, double lado2) {
-        super(cor);
-        this.lado1 = lado1;
-        this.lado2 = lado2;
-    }
-
-    public Retangulo() {
-    }
-
-    public double getLado1() {
-        return lado1;
-    }
-
-    public void setLado1(double lado1) {
-        this.lado1 = lado1;
-    }
-
-    public double getLado2() {
-        return lado2;
-    }
-
-    public void setLado2(double lado2) {
-        this.lado2 = lado2;
+        return base * altura;
     }
 
     @Override
     public String toString() {
-        return "Retangulo [lado1= " + lado1 + ", lado2= " + lado2 + ", cor= " + super.getCor() + "]";
+        return "Triangulo [base= " + base + ", altura= " + altura + ", cor= " + super.getCor() + "]";
     }
 
 }

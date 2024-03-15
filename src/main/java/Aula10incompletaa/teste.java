@@ -15,34 +15,28 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package exaula10.kayquedefreitas;
+package Aula10incompletaa;
 
 /**
  *
  * @author Kayque de Freitas <kayquefreitas08@gmail.com>
  * @data 15/03/2024
- * @brief Class Quadrado
+ * @brief Class teste
  */
-public class Quadrado extends Retangulo {
-    public Quadrado(){
-        super();
+public class teste {
+    public static void main(String[] args) {
+        Quadrado quadrado = new Quadrado();
+        Triangulo triangulo = new Triangulo("Azul", 5, 12);
+        Circulo circulo = new Circulo("Verde", 10.2);
+        Retangulo retangulo = new Retangulo("Rosa", 32, 12);
+        
+        quadrado.setCor("Roxo");
+        quadrado.setLado1(4);
+        
+        System.out.println("quadrado");
+        System.out.println("triangulo");
+        System.out.println("circulo");
+        System.out.println("retangulo");
     }
-    
-    public Quadrado(String cor, double lado1, double lado2){
-        super(cor, lado1, lado2);
-    }
-    
-    public Quadrado (String cor, double lado){
-        lado = super.getLado1();
-    }
-    
-    @Override
-    public double area (){
-        return this.getLado1() * this.getLado1();
-    }
-    
-    @Override
-    public String toString(){
-        return "Quadrado [area()= " + area() + ", cor= " + super.getCor() + "]";
-    }
+
 }
