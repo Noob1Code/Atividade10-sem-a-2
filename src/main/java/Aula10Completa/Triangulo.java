@@ -15,34 +15,50 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package exaula10.kayquedefreitas;
+package Aula10Completa;
 
 /**
  *
  * @author Kayque de Freitas <kayquefreitas08@gmail.com>
  * @data 15/03/2024
- * @brief Class Quadrado
+ * @brief Class Triangulo
  */
-public class Quadrado extends Retangulo {
-    public Quadrado(){
-        super();
+public class Triangulo extends Figura{
+     double base;
+     double altura;
+    
+    public Triangulo(){
     }
     
-    public Quadrado(String cor, double lado1, double lado2){
-        super(cor, lado1, lado2);
+    public Triangulo(String cor, double base, double altura){
+        super(cor);
+        this.base = base;
+        this.altura = altura;
     }
     
-    public Quadrado (String cor, double lado){
-        lado = super.getLado1();
+    public double getBase(double base){
+        return base;
+    }
+    
+    public void setBase(double base){
+        this.base = base;
+    }
+    
+    public double getAltura(){
+        return altura;
+    }
+    
+    public void setAltura (double altura){
+        this.altura =altura;
     }
     
     @Override
-    public double area (){
-        return this.getLado1() * this.getLado1();
+    public double area(){
+        return base = altura;
     }
     
     @Override
     public String toString(){
-        return "Quadrado [area()= " + area() + ", cor= " + super.getCor() + "]";
+        return "Triangulo [base= " + base + ", altura= " + altura + ", cor= " + super.getCor() + "]";
     }
 }

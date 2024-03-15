@@ -15,50 +15,41 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package exaula10.kayquedefreitas;
+package Aula10Completa;
 
 /**
  *
  * @author Kayque de Freitas <kayquefreitas08@gmail.com>
  * @data 15/03/2024
- * @brief Class Triangulo
+ * @brief Class Circulo
  */
-public class Triangulo extends Figura{
-     double base;
-     double altura;
+public class Circulo extends Figura {
+    double raio;
     
-    public Triangulo(){
-    }
-    
-    public Triangulo(String cor, double base, double altura){
+    public Circulo(String cor, double raio){
         super(cor);
-        this.base = base;
-        this.altura = altura;
+        this.raio = raio;
     }
     
-    public double getBase(double base){
-        return base;
+    public Circulo(){
+        
     }
     
-    public void setBase(double base){
-        this.base = base;
+    public double getRaio(){
+        return raio;
     }
     
-    public double getAltura(){
-        return altura;
-    }
-    
-    public void setAltura (double altura){
-        this.altura =altura;
-    }
-    
-    @Override
-    public double area(){
-        return base = altura;
+    public void setRaio (double raio){
+        this.raio = raio;
     }
     
     @Override
     public String toString(){
-        return "Triangulo [base= " + base + ", altura= " + altura + ", cor= " + super.getCor() + "]";
+        return "Circulo [raio= " + raio + ", cor= " + super.getCor() + "]";
+    }
+    
+    @Override
+    public double area(){
+        return raio * 3.14 *2;
     }
 }
