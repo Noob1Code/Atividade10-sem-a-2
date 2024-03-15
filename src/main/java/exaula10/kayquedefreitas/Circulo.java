@@ -15,43 +15,41 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package exaula08.kayquedefreitas;
+package exaula10.kayquedefreitas;
 
 /**
  *
  * @author Kayque de Freitas <kayquefreitas08@gmail.com>
  * @data 15/03/2024
- * @brief Class Retangulo
+ * @brief Class Circulo
  */
-public class Retangulo extends Figura {
-    double lado1;
-    double lado2;
+public class Circulo extends Figura {
+    double raio;
     
-    @Override
-    public double area(){
-        return this.lado1 = this.lado2;
-    }
-    
-    public Retangulo(String cor, double lado1, double lado2){
+    public Circulo(String cor, double raio){
         super(cor);
-        this.lado1 = lado1;
-        this.lado2 = lado2;
+        this.raio = raio;
     }
     
-    public Retangulo (){
+    public Circulo(){
         
     }
     
-    public double getLado1(){
-        return lado1;
+    public double getRaio(){
+        return raio;
     }
     
-    public void setLado2(double lado2){
-        this.lado2 = lado2;
+    public void setRaio (double raio){
+        this.raio = raio;
     }
     
     @Override
     public String toString(){
-        return "Retangulo [lado1= " + lado1 + ", lado2= " + lado2 + ", cor= " + super.getCor() + "]";
+        return "Circulo [raio= " + raio + ", cor= " + super.getCor() + "]";
+    }
+    
+    @Override
+    public double area(){
+        return raio * 3.14 *2;
     }
 }

@@ -15,38 +15,43 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package exaula08.kayquedefreitas;
+package exaula10.kayquedefreitas;
 
 /**
  *
  * @author Kayque de Freitas <kayquefreitas08@gmail.com>
  * @data 15/03/2024
- * @brief Class Quadrado
+ * @brief Class Retangulo
  */
-public class Quadrado extends Retangulo {
-    public Quadrado(){
-        super();
-    }
-    
-    public Quadrado(String cor, double lado1, double lado2){
-        super(cor, lado1, lado2);
-    }
-    
-    public Quadrado (String cor, double lado){
-        lado = super.getLado1();
-    }
+public class Retangulo extends Figura {
+    double lado1;
+    double lado2;
     
     @Override
-    public double area (){
-        return this.getLado1() * this.getLado1();
+    public double area(){
+        return this.lado1 = this.lado2;
+    }
+    
+    public Retangulo(String cor, double lado1, double lado2){
+        super(cor);
+        this.lado1 = lado1;
+        this.lado2 = lado2;
+    }
+    
+    public Retangulo (){
+        
+    }
+    
+    public double getLado1(){
+        return lado1;
+    }
+    
+    public void setLado2(double lado2){
+        this.lado2 = lado2;
     }
     
     @Override
     public String toString(){
-        return "Quadrado [area()= " + area() + ", cor= " + super.getCor() + "]";
-    }
-
-    void setLado1(int i) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        return "Retangulo [lado1= " + lado1 + ", lado2= " + lado2 + ", cor= " + super.getCor() + "]";
     }
 }

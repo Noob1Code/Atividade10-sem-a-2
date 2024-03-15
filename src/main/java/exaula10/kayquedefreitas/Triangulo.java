@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package exaula08.kayquedefreitas;
+package exaula10.kayquedefreitas;
 
 /**
  *

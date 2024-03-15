@@ -15,41 +15,38 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package exaula08.kayquedefreitas;
+package exaula10.kayquedefreitas;
 
 /**
  *
  * @author Kayque de Freitas <kayquefreitas08@gmail.com>
  * @data 15/03/2024
- * @brief Class Circulo
+ * @brief Class Figura
  */
-public class Circulo extends Figura {
-    double raio;
+public abstract class Figura {
+     String cor;
     
-    public Circulo(String cor, double raio){
-        super(cor);
-        this.raio = raio;
-    }
-    
-    public Circulo(){
+    public Figura (){
         
     }
     
-    public double getRaio(){
-        return raio;
+    public Figura (String cor){
+        super ();
+        this.cor = cor;
     }
     
-    public void setRaio (double raio){
-        this.raio = raio;
+    public String getCor(){
+        return cor;
+    }
+    
+    public void setCor (String cor){
+        this.cor = cor;
     }
     
     @Override
-    public String toString(){
-        return "Circulo [raio= " + raio + ", cor= " + super.getCor() + "]";
+    public String toString() {
+        return "Figura [cor = "+ cor + "]";
     }
     
-    @Override
-    public double area(){
-        return raio * 3.14 *2;
-    }
+    public abstract double area();
 }

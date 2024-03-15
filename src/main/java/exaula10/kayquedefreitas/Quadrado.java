@@ -15,38 +15,38 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package exaula08.kayquedefreitas;
+package exaula10.kayquedefreitas;
 
 /**
  *
  * @author Kayque de Freitas <kayquefreitas08@gmail.com>
  * @data 15/03/2024
- * @brief Class Figura
+ * @brief Class Quadrado
  */
-public abstract class Figura {
-     String cor;
-    
-    public Figura (){
-        
+public class Quadrado extends Retangulo {
+    public Quadrado(){
+        super();
     }
     
-    public Figura (String cor){
-        super ();
-        this.cor = cor;
+    public Quadrado(String cor, double lado1, double lado2){
+        super(cor, lado1, lado2);
     }
     
-    public String getCor(){
-        return cor;
-    }
-    
-    public void setCor (String cor){
-        this.cor = cor;
+    public Quadrado (String cor, double lado){
+        lado = super.getLado1();
     }
     
     @Override
-    public String toString() {
-        return "Figura [cor = "+ cor + "]";
+    public double area (){
+        return this.getLado1() * this.getLado1();
     }
     
-    public abstract double area();
+    @Override
+    public String toString(){
+        return "Quadrado [area()= " + area() + ", cor= " + super.getCor() + "]";
+    }
+
+    void setLado1(int i) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 }
