@@ -24,8 +24,8 @@ package exaula08.kayquedefreitas;
  * @brief Class Retangulo
  */
 public class Retangulo extends Figura {
-    private double lado1;
-    private double lado2;
+    double lado1;
+    double lado2;
     
     @Override
     public double area(){

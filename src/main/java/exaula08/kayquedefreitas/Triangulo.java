@@ -24,8 +24,8 @@ package exaula08.kayquedefreitas;
  * @brief Class Triangulo
  */
 public class Triangulo extends Figura{
-    private double base;
-    private double altura;
+     double base;
+     double altura;
     
     public Triangulo(){
     }

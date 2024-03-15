@@ -24,7 +24,7 @@ package exaula08.kayquedefreitas;
  * @brief Class Circulo
  */
 public class Circulo extends Figura {
-    private double raio;
+    double raio;
     
     public Circulo(String cor, double raio){
         super(cor);

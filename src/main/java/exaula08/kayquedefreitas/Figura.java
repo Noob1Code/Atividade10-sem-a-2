@@ -24,7 +24,7 @@ package exaula08.kayquedefreitas;
  * @brief Class Figura
  */
 public abstract class Figura {
-    private String cor;
+     String cor;
     
     public Figura (){
         
